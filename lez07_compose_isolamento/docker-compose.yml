@@ -1,0 +1,30 @@
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - network_backend
+
+  backend:
+    image: tomcat:latest
+    depends_on:
+      - db
+    networks:
+      - network_backend
+      - network_frontend
+
+  frontend:
+    image: nginx:latest
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - network_frontend
+
+networks:
+  network_backend:
+    driver: bridge
+  network_frontend:
+    driver: bridge

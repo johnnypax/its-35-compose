@@ -1,0 +1,5 @@
+services:
+  crash-demo:
+    image: ubuntu:26.04
+    command: sh -c "echo 'This is a crash demo container' && sleep 5 && exit 1"
+    restart: on-failure:3
