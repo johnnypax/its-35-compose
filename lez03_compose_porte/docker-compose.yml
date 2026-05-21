@@ -1,0 +1,9 @@
+services:
+  web-nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+  web-tomcat:
+    image: tomcat:latest
+    ports:
+      - "8080:8080"

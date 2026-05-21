@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - "0:3306"
+  
+  backend:
+    image: tomcat:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  frontend:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

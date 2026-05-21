@@ -1,0 +1,9 @@
+services:
+  ubu_uno:
+    image: ubuntu:26.04
+    container_name: ubu_uno
+    command: sleep infinity
+  ubu_due:
+    image: ubuntu:24.04
+    container_name: ubu_due
+    command: sleep infinity
