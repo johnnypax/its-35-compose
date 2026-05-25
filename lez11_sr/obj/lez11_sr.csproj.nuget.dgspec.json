@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj": {}
+    "C:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj": {
+    "C:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj",
+        "projectUniqueName": "C:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj",
         "projectName": "lez11_sr",
-        "projectPath": "c:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj",
+        "projectPath": "C:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\lez11_sr.csproj",
         "packagesPath": "C:\\Users\\ACADEMY\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\obj\\",
+        "outputPath": "C:\\Users\\ACADEMY\\Desktop\\DIDATTICA LIVE\\ITS_35_Docker\\lez11_sr\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
