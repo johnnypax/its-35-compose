@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "lez09_minimal_docker/1.0.0": {
+        "runtime": {
+          "lez09_minimal_docker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lez09_minimal_docker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
