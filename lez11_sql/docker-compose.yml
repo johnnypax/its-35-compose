@@ -1,0 +1,9 @@
+services:
+  sqlserver:
+    build: .
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+    # ports:
+    #   - "1433:1433"
