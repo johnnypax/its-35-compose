@@ -18,7 +18,7 @@ public class PostRepository : IRepository<Post>
 
     public Post? GetById(int id)
     {
-        throw new NotImplementedException();
+        return _context.Posts.FirstOrDefault(p => p.Id == id);
     }
 
     public bool Insert(Post obj)

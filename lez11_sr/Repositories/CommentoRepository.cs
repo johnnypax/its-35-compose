@@ -30,4 +30,9 @@ public class CommentoRepository : IRepository<Commento>
     {
         throw new NotImplementedException();
     }
+
+    public List<Commento> GetByPostId(int postId)
+    {
+        return _context.Commenti.Where(c => c.postRif == postId).ToList();
+    }
 }

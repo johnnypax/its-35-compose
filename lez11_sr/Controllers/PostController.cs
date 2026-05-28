@@ -17,4 +17,12 @@ public class PostController
         return _service.GetAll();
     }
 
+    [HttpGet("{id}")]
+    public ActionResult<PostDTO?> GetById(int id)
+    {
+        PostDTO? p = _service.GetById(id);
+
+        return p;
+    }
+
 }

@@ -1,10 +1,12 @@
 public class PostService
 {
     private readonly PostRepository _postRepository;
+    private readonly CommentoService _commentoService;
 
-    public PostService(PostRepository repo)
+    public PostService(PostRepository repo, CommentoService commentoService)
     {
         _postRepository = repo;
+        _commentoService = commentoService;
     }
 
     public List<PostDTO> GetAll()
@@ -18,11 +20,26 @@ public class PostService
                 new PostDTO()
                 {
                     Testo = p.Testo,
-                    Titolo = p.Titolo
+                    Titolo = p.Titolo,
+                    Commenti = _commentoService.GetCommentiByPostId(p.Id)
                 }
             );
         }
 
         return risultato;
+    }
+
+    public PostDTO? GetById(int id)
+    {
+        Post? p = _postRepository.GetById(id);
+        if (p == null)
+            return null;
+
+        return new PostDTO()
+        {
+            Testo = p.Testo,
+            Titolo = p.Titolo,
+            Commenti = _commentoService.GetCommentiByPostId(p.Id)
+        };
     }
 }

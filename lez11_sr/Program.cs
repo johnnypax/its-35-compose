@@ -7,6 +7,8 @@ builder.Services.AddDbContext<BlogContext>(options =>
 
 builder.Services.AddScoped<PostService>();
 builder.Services.AddScoped<PostRepository>();
+
+builder.Services.AddScoped<CommentoService>();
 builder.Services.AddScoped<CommentoRepository>();
 
 builder.Services.AddControllers();
