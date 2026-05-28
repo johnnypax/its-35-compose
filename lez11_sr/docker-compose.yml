@@ -1,0 +1,16 @@
+services:
+  sqlserver:
+    image: lez11_sql-sqlserver
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+    # ports:
+    #   - "1433:1433"
+  api:
+    image: lez11_sr-api:1.0
+    container_name: api
+    depends_on:
+      - sqlserver
+    ports:
+      - "0:8080"
