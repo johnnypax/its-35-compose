@@ -6,7 +6,7 @@
 # Attende che SQL Server sia pronto
 echo "Attendo l'avvio di SQL Server..."
 
-sleep 20
+sleep 10
 
 # Esegue lo script di inizializzazione
 echo "Eseguo init.sql..."
